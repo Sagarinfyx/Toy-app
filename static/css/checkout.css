@@ -1,0 +1,76 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color for the entire page */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the checkout container */
+div {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the checkout header */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style the order item list */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* Style the order item details */
+li strong {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+li p {
+    margin: 5px 0;
+}
+
+/* Style the total cost and payment link */
+p {
+    text-align: right;
+    font-weight: bold;
+}
+
+a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    background-color: #0056b3;
+}

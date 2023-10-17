@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/checkout.css') }}">
+    <!-- Include your CSS file for styling -->
+</head>
+<body>
+    <h1>Checkout</h1>
+    <div>
+        <h2>Your Order</h2>
+        <ul>
+            {% for cart_item in cart_items %}
+                <li>
+                    <strong>{{ cart_item.product.name }}</strong>
+                    <p>{{ cart_item.product.description }}</p>
+                    <p>Price: ${{ cart_item.product.price }}</p>
+                    <p>Quantity: {{ cart_item.quantity }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+        <p>Total Cost: ${{ total_cost }}</p>
+        <a href="{{ url_for('process_payment') }}">Process Payment</a>
+    </div>
+</body>
+</html>

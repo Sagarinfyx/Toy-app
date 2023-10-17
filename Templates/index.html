@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ToyApp</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img id="logo image" src="{{ url_for('static', filename='img/logo.jpg') }}" alt="ToyApp Logo" style="width: 350px;
+            height:200px;">
+            <p class="logo-text">ToyApp</p>
+        </div>
+        <div class="navbar">
+            <div class="menu-icon" onclick="toggleNavbar()">&#9776;
+            <a href="/">Home</a>
+            <a href="/product">Product</a>
+            <a href="/contact">Contact Us</a>
+            <a href="login">Login</a>
+            </div>
+         </div>
+    </header>
+    
+    <section class="main-content">
+    <h1>Welcome to ToyApp</h1>
+    <p>Discover a world of fun and excitement with our wide range of toys. Whether you're looking for educational toys, action figures, or plush toys, ToyApp has it all.</p>
+    <img src="{{ url_for('static', filename='img/33754-7-toy-transparent-background.png') }}" alt="Toy Image">
+        <a href="/product" class="main-button">Explore Toys</a>
+    </section>
+    <footer class="footer">
+        <div class="footer-logo-container">
+            <img id="footer-logo-image" src="{{ url_for('static', filename='img/logo.jpg') }}" alt="Footer Logo" style="width: 200px;
+            height:150px;">
+            <p class="footer-logo-text">ToyApp</p>
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
